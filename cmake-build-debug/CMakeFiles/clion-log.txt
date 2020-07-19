@@ -1,0 +1,10 @@
+"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Familiar\CLionProjects\workspace\ep
+CMake Warning (dev) at CMakeLists.txt:5:
+  Syntax Warning in cmake code at column 26
+
+  Argument not separated from preceding token by whitespace.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/Familiar/CLionProjects/workspace/ep/cmake-build-debug

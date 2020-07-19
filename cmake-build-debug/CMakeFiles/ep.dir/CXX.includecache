@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Familiar/CLionProjects/workspace/ep/src/earley.h
+grammar.h
+C:/Users/Familiar/CLionProjects/workspace/ep/src/grammar.h
+
+C:/Users/Familiar/CLionProjects/workspace/ep/src/grammar.h
+string
+-
+vector
+-
+fstream
+-
+iterator
+-
+list
+-
+sstream
+-
+set
+-
+algorithm
+-
+utility
+-
+memory
+-
+iostream
+-
+
+C:/Users/Familiar/CLionProjects/workspace/ep/src/main.cpp
+earley.h
+C:/Users/Familiar/CLionProjects/workspace/ep/src/earley.h
+grammar.h
+C:/Users/Familiar/CLionProjects/workspace/ep/src/grammar.h
+
