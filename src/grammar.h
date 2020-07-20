@@ -5,17 +5,7 @@
 #ifndef EP_GRAMMAR_H
 #define EP_GRAMMAR_H
 
-#include <string>
-#include <vector>
-#include <fstream>
-#include <iterator>
-#include <list>
-#include <sstream>
-#include <set>
-#include <algorithm>
-#include <utility>
-#include <memory>
-#include <iostream>
+#include "lib.h"
 
 
 namespace MB

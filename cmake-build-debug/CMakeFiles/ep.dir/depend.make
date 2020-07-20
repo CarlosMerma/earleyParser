@@ -3,5 +3,6 @@
 
 CMakeFiles/ep.dir/src/main.cpp.obj: ../src/earley.h
 CMakeFiles/ep.dir/src/main.cpp.obj: ../src/grammar.h
+CMakeFiles/ep.dir/src/main.cpp.obj: ../src/lib.h
 CMakeFiles/ep.dir/src/main.cpp.obj: ../src/main.cpp
 

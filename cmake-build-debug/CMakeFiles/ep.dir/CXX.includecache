@@ -6,11 +6,15 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Familiar/CLionProjects/workspace/ep/src/earley.h
+C:/Users/Familiar/Desktop/teo2/earleyParser/src/earley.h
 grammar.h
-C:/Users/Familiar/CLionProjects/workspace/ep/src/grammar.h
+C:/Users/Familiar/Desktop/teo2/earleyParser/src/grammar.h
 
-C:/Users/Familiar/CLionProjects/workspace/ep/src/grammar.h
+C:/Users/Familiar/Desktop/teo2/earleyParser/src/grammar.h
+lib.h
+C:/Users/Familiar/Desktop/teo2/earleyParser/src/lib.h
+
+C:/Users/Familiar/Desktop/teo2/earleyParser/src/lib.h
 string
 -
 vector
@@ -34,9 +38,9 @@ memory
 iostream
 -
 
-C:/Users/Familiar/CLionProjects/workspace/ep/src/main.cpp
+C:/Users/Familiar/Desktop/teo2/earleyParser/src/main.cpp
 earley.h
-C:/Users/Familiar/CLionProjects/workspace/ep/src/earley.h
+C:/Users/Familiar/Desktop/teo2/earleyParser/src/earley.h
 grammar.h
-C:/Users/Familiar/CLionProjects/workspace/ep/src/grammar.h
+C:/Users/Familiar/Desktop/teo2/earleyParser/src/grammar.h
 
