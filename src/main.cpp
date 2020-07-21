@@ -12,12 +12,12 @@ int main()
     std::ifstream ifs(filename);
     if (ifs) {
         MB::grammar grammar(ifs);
-        std::string sentence[] = {"John", "called", "Mary", "from", "Denver"};
+        std::string sentence[] = {"2", "+", "3","*","4"};
         const size_t len = sizeof(sentence) / sizeof(sentence[0]);
         bool success = MB::earley_parser(grammar).parse(sentence, sentence + len, std::cout);
         std::cout << "Success: " << std::boolalpha << success << '\n';
     }
     else {
-        std::cerr << "Couldn't open " << filename << " for reading\n";
+        std::cerr << "No se puede abrir " << filename << " para leer\n";
     }
 }

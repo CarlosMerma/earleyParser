@@ -105,7 +105,7 @@ namespace MB
             {
             }
 
-            // Add state st to statelist s
+            // Add state st to statelists
             void add_state(state& st, unsigned int s)
             {
                 if (s < chart_.size()) {

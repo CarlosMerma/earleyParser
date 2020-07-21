@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Familiar/Desktop/teo2/earleyParser/src/earley.h
+C:/Users/tonym/Documents/GitHub/earleyParser/src/earley.h
 grammar.h
-C:/Users/Familiar/Desktop/teo2/earleyParser/src/grammar.h
+C:/Users/tonym/Documents/GitHub/earleyParser/src/grammar.h
 
-C:/Users/Familiar/Desktop/teo2/earleyParser/src/grammar.h
+C:/Users/tonym/Documents/GitHub/earleyParser/src/grammar.h
 lib.h
-C:/Users/Familiar/Desktop/teo2/earleyParser/src/lib.h
+C:/Users/tonym/Documents/GitHub/earleyParser/src/lib.h
 
-C:/Users/Familiar/Desktop/teo2/earleyParser/src/lib.h
+C:/Users/tonym/Documents/GitHub/earleyParser/src/lib.h
 string
 -
 vector
@@ -38,9 +38,9 @@ memory
 iostream
 -
 
-C:/Users/Familiar/Desktop/teo2/earleyParser/src/main.cpp
+C:/Users/tonym/Documents/GitHub/earleyParser/src/main.cpp
 earley.h
-C:/Users/Familiar/Desktop/teo2/earleyParser/src/earley.h
+C:/Users/tonym/Documents/GitHub/earleyParser/src/earley.h
 grammar.h
-C:/Users/Familiar/Desktop/teo2/earleyParser/src/grammar.h
+C:/Users/tonym/Documents/GitHub/earleyParser/src/grammar.h
 

@@ -1,11 +1,7 @@
-S -> NP VP
-NP -> NP PP
-NP -> Noun
-VP -> Verb NP
-VP -> VP PP
-PP -> Prep NP
-Noun -> John
-Noun -> Mary
-Noun -> Denver
-Verb -> called
-Prep -> from
+P -> S
+S -> S + M | M
+M -> M * T| T
+T -> 1 | 2 | 3 | 4
+
+
+
