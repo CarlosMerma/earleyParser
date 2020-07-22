@@ -13,33 +13,33 @@ namespace MB
     namespace detail
     {
 
-// An element of a statelist, also known as a "dotted rule" or "Earley item"
+
         struct state
         {
-            MB::rule::const_ptr rule_; // The grammar rule
-            const unsigned int right_; // Index of right hand side alternative
-            unsigned int dot_; // Position of dot within symbols on right hand side
-            unsigned int i_, j_; // Positions within the input
-            char added_by_; // Which function added this state
+            MB::rule::const_ptr rule_;
+            const unsigned int right_;
+            unsigned int dot_;
+            unsigned int i_, j_;
+            char added_by_;
             state(MB::rule::const_ptr rule, unsigned int right, unsigned int i, unsigned int j)
                     : rule_(rule), right_(right), dot_(0), i_(i), j_(j), added_by_(0)
             {
             }
 
-            // Is dot all the way to the right?
+
             bool completed() const
             {
                 return dot_ == rule_->right()[right_].size();
             }
 
-            // Get symbol to the right of dot
+
             std::string next_symbol() const
             {
                 return rule_->right()[right_][dot_];
             }
         };
 
-// Pretty-print state
+
         std::ostream& operator <<(std::ostream& os, const state& st)
         {
             const std::vector<std::string>& right = st.rule_->right()[st.right_];
@@ -76,7 +76,6 @@ namespace MB
             return os;
         }
 
-// Needed to check for duplicate states
         bool operator ==(const state& state1, const state& state2)
         {
             return state1.rule_->left() == state2.rule_->left()
@@ -87,10 +86,10 @@ namespace MB
                    && state1.j_ == state2.j_;
         }
 
-// A statelist is a list of states
+
         typedef std::list<state> statelist;
 
-// A chart is a vector of statelists
+
         struct chart
         {
             const MB::grammar& grammar_;
@@ -98,30 +97,28 @@ namespace MB
 
             chart(const MB::grammar& grammar)
                     : grammar_(grammar),
-                    // Chart begins with 1 statelist containing 1 dummy state used to track
-                    // successful parse
+
                       chart_(1, statelist(1, state(MB::rule::create("$", grammar.get_start_left()),
                                                    0, 0, 0)))
             {
             }
 
-            // Add state st to statelists
             void add_state(state& st, unsigned int s)
             {
                 if (s < chart_.size()) {
-                    // Adding to the last statelist
+
                     statelist::iterator it = std::find(chart_[s].begin(), chart_[s].end(), st);
                     if (it == chart_[s].end()) {
                         chart_[s].push_back(st);
                     }
                 }
                 else {
-                    // Adding to a new statelist
+
                     chart_.push_back(statelist(1, st));
                 }
             }
 
-            // Add predictions for the next symbol in this state
+
             void predictor(state& st)
             {
                 std::vector<MB::rule::const_ptr> rules;
@@ -135,7 +132,6 @@ namespace MB
                 }
             }
 
-            // Scan input for next symbol
             void scanner(const state& st, const std::vector<std::string>& input)
             {
                 const std::string& word = input[st.j_];
@@ -147,7 +143,7 @@ namespace MB
                 }
             }
 
-            // Complete states
+
             void completer(const state& st)
             {
                 const statelist& list = chart_[st.i_];
@@ -166,7 +162,7 @@ namespace MB
                 }
             }
 
-            // We have succeeded if the completed dummy state is in the final statelist
+
             bool succeeded() const
             {
                 const statelist& list = chart_[chart_.size() - 1];
@@ -176,7 +172,7 @@ namespace MB
                        != list.end();
             }
 
-            // The main algorithm
+
             bool parse(const std::vector<std::string>& input, std::ostream *os)
             {
                 for (unsigned int i = 0; i <= input.size(); ++i) {
@@ -205,7 +201,7 @@ namespace MB
                 return succeeded();
             }
 
-            // Pretty-print chart
+
             friend std::ostream& operator <<(std::ostream& os, const chart &ch)
             {
                 for (unsigned int i = 0; i < ch.chart_.size(); ++i) {

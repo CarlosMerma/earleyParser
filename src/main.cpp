@@ -12,7 +12,7 @@ int main()
     std::ifstream ifs(filename);
     if (ifs) {
         MB::grammar grammar(ifs);
-        std::string sentence[] = {"2", "+", "3","*","4"};
+        std::string sentence[] = {"papu", "drink", "milk","with","chocolate"};
         const size_t len = sizeof(sentence) / sizeof(sentence[0]);
         bool success = MB::earley_parser(grammar).parse(sentence, sentence + len, std::cout);
         std::cout << "Success: " << std::boolalpha << success << '\n';

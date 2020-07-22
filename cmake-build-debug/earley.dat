@@ -1,7 +1,14 @@
-P -> S
-S -> S + M | M
-M -> M * T| T
-T -> 1 | 2 | 3 | 4
-
+S -> NP VP
+PP -> P NP
+VP -> V NP
+VP -> VP PP
+P -> with
+V -> drink
+NP -> NP PP
+NP -> N
+N -> papu
+N -> milk
+N -> chocolate
+N -> coffe
 
 
