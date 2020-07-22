@@ -11,14 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a667a0b7-2e0b-4616-9760-ef154d5d07ec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ep.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ep.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ep.dir/src/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ep.dir/src/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/earley.dat" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/earley.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ep.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ep.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="a667a0b7-2e0b-4616-9760-ef154d5d07ec" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,7 +70,7 @@
       <workItem from="1595360553841" duration="143000" />
       <workItem from="1595362685931" duration="1603000" />
       <workItem from="1595375392031" duration="36000" />
-      <workItem from="1595375440920" duration="3251000" />
+      <workItem from="1595375440920" duration="3661000" />
     </task>
     <servers />
   </component>
